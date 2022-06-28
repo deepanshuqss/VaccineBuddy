@@ -35,7 +35,6 @@ const Carousel = ({data}) => {
     if(data && data.length) {
         return(
             <View style={styles.view}>
-                <Text style={styles.titleText}>Offers</Text>
                 <FlatList 
                     data={data}
                     ref={(flatList) => {this.flatList = flatList}}
