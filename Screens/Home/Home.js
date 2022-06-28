@@ -1,12 +1,16 @@
-import React from "react";
-import { View, Text} from "react-native"
+import React from 'react';
+import { View, ScrollView } from 'react-native';
+import Carousel from '../../Components/Carousel';
+import data from '../../Data/Data'
 
-export default function Home(){
-
+const Home = ({navigation}) => {
     return (
         <View>
-            <Text>Home Screen</Text>
+            <ScrollView scrollEventThrottle={16}>
+                <Carousel data={data} />
+            </ScrollView>
         </View>
-    );
-
+    )
 }
+
+export default Home;
