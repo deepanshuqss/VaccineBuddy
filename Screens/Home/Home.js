@@ -21,7 +21,7 @@ const Home = ({navigation}) => {
                 <PackageButton oncall={con} width={width} iconName="calendar" text1="Book an Appointment" text2="with a GP or Nune" ></PackageButton>
                 <PackageButton oncall={con} width={width} iconName="calendar" text1="Book an Appointment" text2="with a GP or Nune" ></PackageButton>
             </View>
-                <View style={{height:130 , marginTop:20}}>
+                <View style={{height:130 , marginTop:20,marginBottom:20,marginRight:7.5,marginLeft:7.5}}>
                     <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                         <Card imageUri={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQrt6Wqj4KyURBMcU_vEE5OAge8UWIl4nUQ&usqp=CAU'}} name="Covid Vaccine"/>
                         <Card imageUri={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqHJhHZM8V9jiPTd_MkPIel9TyMRBdHNnx3Q&usqp=CAU'}} name="Viral Vaccine"/>
