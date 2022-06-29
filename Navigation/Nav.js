@@ -28,6 +28,7 @@ export default function Nav() {
         />
         
         <Tab.Screen name="Profile" component={Profile}  options={{
+          headerShown: false,
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account-circle" color={color} size={size} />
