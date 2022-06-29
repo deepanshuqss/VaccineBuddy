@@ -4,13 +4,14 @@ import Profile from '../Screens/Profile'
 import Consultation from '../Screens/Consultation'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icons from 'react-native-vector-icons/Fontisto'
-
+  
 const Tab = createBottomTabNavigator();
   
 export default function Nav() {
     return (
       <Tab.Navigator>
-        <Tab.Screen name="Welcome to Vaccine Buddy" component={Home}  options={{
+        <Tab.Screen name="Welcome to Vaccine Buddy"  component={Home}  options={{
+          headerShown: false,
           tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
@@ -19,6 +20,7 @@ export default function Nav() {
         />
         
         <Tab.Screen name="Consultation" component={Consultation}  options={{
+          headerShown: false,
           tabBarLabel: 'Consultation',
           tabBarIcon: ({ color, size }) => (
             <Icons name="doctor" color={color} size={size} />
@@ -27,6 +29,7 @@ export default function Nav() {
         />
         
         <Tab.Screen name="Profile" component={Profile}  options={{
+          headerShown: false,
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="account-circle" color={color} size={size} />
