@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 12,
         marginVertical: 10,
         marginHorizontal: 15,
-        top: 100
+        top: Dimensions.get('screen').height / 6
     },
     buttonText: {
         fontSize: 18,
