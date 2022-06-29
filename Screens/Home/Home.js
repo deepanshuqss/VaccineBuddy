@@ -3,6 +3,10 @@ import Carousel from '../../Components/Carousel';
 import data from '../../Data/Data'
 import { View, Text, Dimensions, ScrollView} from "react-native"
 import PackageButton  from '../../Components/Home/packageButton';
+import { Appbar } from 'react-native-paper';
+import { Platform } from 'react-native';
+
+const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 const { height, width } = Dimensions.get('window')
 
 const con = () =>{
@@ -13,6 +17,11 @@ import Card from "../../Components/Card";
 const Home = ({navigation}) => {
     return (
         <View>
+            <Appbar.Header>
+            <Appbar.Content title="Welcome to Vaccine Buddy" />
+                <Appbar.Action icon="magnify" onPress={() => {}} />
+                <Appbar.Action icon={MORE_ICON} onPress={() => {}} />
+            </Appbar.Header>
             <ScrollView scrollEventThrottle={16}>
                 <Carousel data={data} />
                 <View style={{ paddingHorizontal: 20, marginTop: 20, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' }}>
