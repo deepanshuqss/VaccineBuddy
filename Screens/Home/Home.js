@@ -15,7 +15,7 @@ import Card from "../../Components/Card";
 const Home = ({navigation}) => {
     const con = ()=>navigation.navigate('Package');
     return (
-        <View>
+        <View style={{marginBottom:105}}>
             <Appbar.Header>
             <Appbar.Content title="Welcome to Vaccine Buddy" />
                 <Appbar.Action icon="magnify" onPress={() => {}} />
@@ -40,8 +40,6 @@ const Home = ({navigation}) => {
                         <Card imageUri={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_aTg1eDvgD3uO7mEyd1Zg2XBH8K1-B_qFA&usqp=CAU'}} name="H1 Vaccine"/>
                     </ScrollView>
                 </View>
-                
-
             </ScrollView>
         </View>
 );
