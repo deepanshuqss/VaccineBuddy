@@ -9,12 +9,11 @@ import { Platform } from 'react-native';
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 const { height, width } = Dimensions.get('window')
 
-const con = () =>{
-    console.log("hii");
-}
+
 import Card from "../../Components/Card";
 
 const Home = ({navigation}) => {
+    const con = ()=>navigation.navigate('Package');
     return (
         <View>
             <Appbar.Header>
