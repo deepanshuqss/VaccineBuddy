@@ -5,12 +5,11 @@ import { View, Text, Dimensions, ScrollView} from "react-native"
 import PackageButton  from '../../Components/Home/packageButton';
 const { height, width } = Dimensions.get('window')
 
-const con = () =>{
-    console.log("hii");
-}
+
 import Card from "../../Components/Card";
 
 const Home = ({navigation}) => {
+    const con = ()=>navigation.navigate('Package');
     return (
         <View>
             <ScrollView scrollEventThrottle={16}>
