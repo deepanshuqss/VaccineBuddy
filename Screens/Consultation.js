@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, View, Text, StyleSheet, TextInput, Dimensions, TouchableOpacity, ToastAndroid } from "react-native";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
+import { Appbar } from 'react-native-paper';
 
 const Consultation = () => {
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
@@ -29,6 +30,9 @@ const Consultation = () => {
 
   return (
     <View>
+        <Appbar.Header>
+            <Appbar.Content title="Consultation" />
+        </Appbar.Header>
         <View>
             <Text style={styles.text}>Make a new Consultation, Christopher</Text>
         </View>

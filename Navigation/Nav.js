@@ -20,6 +20,7 @@ export default function Nav() {
         />
         
         <Tab.Screen name="Consultation" component={Consultation}  options={{
+          headerShown: false,
           tabBarLabel: 'Consultation',
           tabBarIcon: ({ color, size }) => (
             <Icons name="doctor" color={color} size={size} />
